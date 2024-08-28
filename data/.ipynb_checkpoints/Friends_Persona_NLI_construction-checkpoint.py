@@ -151,9 +151,9 @@ for flow_len in [0.25, 0.5, 0.75, 1]:
             train_df, test_df = train_test_split(df_tmp, test_size=0.2, random_state=seed)
             valid_df, test_df = train_test_split(test_df, test_size=0.5, random_state=seed)
         
-            train_df.to_csv('Friends_'+p+'_with_role_'+str(flow_len)+'_'+str(seed)+'_train.tsv', sep='\t', index=False)
-            valid_df.to_csv('Friends_'+p+'_with_role_'+str(flow_len)+'_'+str(seed)+'_valid.tsv', sep='\t', index=False)
-            test_df.to_csv('Friends_'+p+'_with_role_'+str(flow_len)+'_'+str(seed)+'_test.tsv', sep='\t', index=False)
+            train_df.to_csv('Friends/Friends_'+p+'_with_role_'+str(flow_len)+'_'+str(seed)+'_train.tsv', sep='\t', index=False)
+            valid_df.to_csv('Friends/Friends_'+p+'_with_role_'+str(flow_len)+'_'+str(seed)+'_valid.tsv', sep='\t', index=False)
+            test_df.to_csv('Friends/Friends_'+p+'_with_role_'+str(flow_len)+'_'+str(seed)+'_test.tsv', sep='\t', index=False)
 
         os.remove('Friends_'+p+'_with_role.tsv')
         
