@@ -16,6 +16,8 @@
 
 ## Affective-NLI
 
+You have to construct dataset first then run the following code
+
 - `src/affective_nli_roberta.py`: Run with RoBERTa
 - `src/affective_nli_T5.py`: Run with T5
 - `src/affective_nli_llama.py`: Run with llama2-7b 
