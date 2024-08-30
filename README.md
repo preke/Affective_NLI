@@ -24,5 +24,11 @@ You have to construct dataset first then run the following code
 
 
 
+
 The above three scripts share similar structures; dataset, random seeds, dialog length, and hyperparameters can be modified in the main function (`if __name__ == '__main__':`).
 
+## Requirements
+
+- `pytorch==1.13.0` or higher
+- `transformers==4.23.1` or higher
+- `openprompt==1.0.1`
